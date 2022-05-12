@@ -1,0 +1,5 @@
+int TestFunc(int nParam1 = 5, int nParam2, int nParam3 = 10)
+-> 중간에 위치한 paremeter의 default value를 생략할 수 없다.
+
+int TestFunc(int nParam1 = 5, int nParam2)
+-> parameter의 default value는 오른쪽부터 설정해 주어야 한다.
