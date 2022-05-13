@@ -1,0 +1,2 @@
+access modifier 'private' block access from the outside and derived classes.
+if we do not describe access modifier when we declare classes, below code blocks are regarded as 'private'.

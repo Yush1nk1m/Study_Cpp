@@ -42,5 +42,5 @@ const char* CMyString::GetString() const
 void CMyString::Release()
 {
 	if (this->m_nLength != 0)
-		delete this->m_pszData;
+		delete[] this->m_pszData; // array에 delete 적용하는 부분 틀림.
 }

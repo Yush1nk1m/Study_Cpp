@@ -1,0 +1,2 @@
+reference type members must be initialized in a initializer list part of a constructor code block.
+modified code --> CRefTest(int& rParam) : m_nData(rParam) { };
