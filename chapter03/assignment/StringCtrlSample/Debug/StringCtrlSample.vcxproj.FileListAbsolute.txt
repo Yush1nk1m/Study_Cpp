@@ -1,2 +1,3 @@
 D:\공부\C++\이것이_C++이다\chapter03\assignment\StringCtrlSample\Debug\StringCtrlSample.exe
 C:\Study\C++\Study_Cpp\chapter03\assignment\StringCtrlSample\Debug\StringCtrlSample.exe
+D:\공부\C++\Study_Cpp\chapter03\assignment\StringCtrlSample\Debug\StringCtrlSample.exe

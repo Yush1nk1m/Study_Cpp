@@ -11,9 +11,17 @@ void TestFunc(const CMyString& param)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	CMyString strData;
+	CMyString strData, strTest;
 	strData.SetString("Hello");
-	TestFunc(strData);
+	strTest.SetString("World");
+
+	// generate copy
+	CMyString strNewData(strData);
+	cout << strNewData.GetString() << endl;
+
+	// call the simple assignment operator
+	strNewData = strTest;
+	cout << strNewData.GetString() << endl;
 
 	return 0;
 }

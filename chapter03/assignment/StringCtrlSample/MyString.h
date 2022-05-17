@@ -3,7 +3,15 @@ class CMyString
 {
 public :
 	CMyString();
+	CMyString(const CMyString& rhs);
 	~CMyString();
+	CMyString& operator=(const CMyString& rhs)
+	{
+		this->SetString(rhs.m_pszData);
+		*m_pszData = *rhs.m_pszData;
+
+		return *this;
+	}
 private:
 	// the pointer that points dynamically allocated memory to store string
 	char* m_pszData;

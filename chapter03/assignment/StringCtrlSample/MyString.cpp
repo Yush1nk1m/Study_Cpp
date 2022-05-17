@@ -7,6 +7,14 @@ CMyString::CMyString()
 {
 }
 
+CMyString::CMyString(const CMyString& rhs)
+	: m_pszData(NULL)
+	, m_nLength(0)
+{
+	this->SetString(rhs.m_pszData);
+	this->m_nLength = rhs.m_nLength;
+}
+
 CMyString::~CMyString()
 {
 	CMyString::Release();
