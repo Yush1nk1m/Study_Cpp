@@ -4,9 +4,9 @@
 #include "pch.h"
 #include "MyString.h"
 
-void TestFunc(const CMyString& param)
+void TestFunc(const CMyString& strParam)
 {
-	cout << param.GetString() << endl;
+	cout << strParam << endl;
 }
 
 int _tmain(int argc, _TCHAR* argv[])
