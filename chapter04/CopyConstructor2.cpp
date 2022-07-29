@@ -1,4 +1,4 @@
-#include <tchar.h>
+#include "tchar.h"
 #include <iostream>
 using namespace std;
 
@@ -16,11 +16,11 @@ private :
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-    // the case when default constructor is called
+    // the case when the default constructor is called
     CMyData a;
     a.SetData(10);
 
-    // the case when copy constructor is called
+    //the case when the copy constructor is called
     CMyData b(a);
     cout << b.GetData() << endl;
 

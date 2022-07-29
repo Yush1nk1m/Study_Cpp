@@ -1,4 +1,4 @@
-#include <tchar.h>
+#include "tchar.h"
 #include <iostream>
 using namespace std;
 
@@ -12,29 +12,29 @@ public :
     }
 
     // declaration and definition of copy constructor
-    CMyData(const CMyData& rhs)
+    CMyData(const CMyData &rhs)
     {
-        cout << "CMyData(const CMyData&)" << endl;
+        cout << "CMyData(const CMyData &)" << endl;
 
         // allocate memory
         m_pnData = new int;
 
-        // copy the value where the pointer points
+        // copy value to the place where the pointer points
         *m_pnData = *rhs.m_pnData;
     }
 
-    // free the memory when the object is destructed
+    // delete dynamically allocated memory when the object is deleted
     ~CMyData()
     {
         delete m_pnData;
     }
 
-    // define a function of assignment operator
-    CMyData& operator=(const CMyData& rhs)
+    // definition of simple assignment operator
+    CMyData& operator=(const CMyData &rhs)
     {
         *m_pnData = *rhs.m_pnData;
 
-        // return a reference for the object itself
+        // return the reference of the object itself
         return *this;
     }
 
@@ -47,20 +47,18 @@ public :
     }
 
 private :
-    int* m_pnData = nullptr;
+    // pointer member data
+    int *m_pnData = nullptr;
 };
 
 int _tmain(int argc, _TCHAR* argv[])
 {
     CMyData a(10);
     CMyData b(20);
-    
-    cout << "a(before) : " << a.GetData() << endl;
 
-    // values of all members are copied when the simple assignment is tried
+    // if the simple assignment is tried, all members' values are copied
     a = b;
-    cout << "a(after) : " << a.GetData() << endl;
-    cout << "b : " << b.GetData() << endl;
+    cout << a.GetData() << endl;
 
     return 0;
 }

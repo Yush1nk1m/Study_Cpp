@@ -1,4 +1,4 @@
-#include <tchar.h>
+#include "tchar.h"
 #include <iostream>
 using namespace std;
 
@@ -7,22 +7,17 @@ class CTestData
 {
 public :
     // constructor with only one parameter can be casted
-    explicit CTestData(int nParam) : m_nData(nParam)
+    CTestData(int nParam) : m_nData(nParam)
     {
         cout << "CTestData(int)" << endl;
     }
 
-    CTestData(const CTestData& rhs) : m_nData(rhs.m_nData)
+    CTestData(const CTestData &rhs) : m_nData(rhs.m_nData)
     {
-        cout << "CTestData(const CTestData&)" << endl;
+        cout << "CTestData(const CTestData &)" << endl;
     }
 
-    ~CTestData()
-    {
-        cout << "~CTestData()" << endl;
-    }
-
-    int GetData() const { return m_nData; }
+    int GetData(void) const { return m_nData; }
     void SetData(int nParam) { m_nData = nParam; }
 
 private :
@@ -30,16 +25,16 @@ private :
 };
 
 // user's code
-// parameter is reference type of the class and implicitly converted
-void TestFunc(const CTestData& param)
+// type of parameter is class and conversion construction is possible
+void TestFunc(CTestData param)
 {
     cout << "TestFunc() : " << param.GetData() << endl;
 }
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-    // can be casted int type to CTestData type
-    TestFunc(CTestData(5));
+    // type can be casted from 'int' to 'CTestData'
+    TestFunc(5);
 
     return 0;
 }

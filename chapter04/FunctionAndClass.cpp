@@ -1,4 +1,4 @@
-#include <tchar.h>
+#include "tchar.h"
 #include <iostream>
 using namespace std;
 
@@ -10,41 +10,40 @@ public :
         cout << "CTestData(int)" << endl;
     }
 
-    CTestData(const CTestData& rhs) : m_nData(rhs.m_nData)
+    CTestData(const CTestData &rhs) : m_nData(rhs.m_nData)
     {
-        cout << "CTestData(const CTestData&)" << endl;
+        cout << "CTestData(const CTestData &)" << endl;
     }
 
-    // read-only constant type method
+    // read-only const method
     int GetData() const { return m_nData; }
 
-    // method trying to write to member variable
+    // a method which tries to write to member variable
     void SetData(int nParam) { m_nData = nParam; }
 
 private :
     int m_nData = 0;
 };
 
-// copy constructor is called because parameter is CTestData class type
-void TestFunc(CTestData param)
+// copy constructor is called because parameter's type is class 'CTestData'
+void TestFunc(CTestData &param)
 {
     cout << "TestFunc()" << endl;
 
-    // callee function changes value of the parameter instance
+    // callee function modifies value of parameter instance
     param.SetData(20);
 }
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-    cout << "*****  Begin   *****" << endl;
+    cout << "***** BEGIN *****" << endl;
     CTestData a(10);
-    cout << "a.GetData() : " << a.GetData() << endl;
     TestFunc(a);
 
-    // print the value of a after calling function
-    cout << "a.GetData() : " << a.GetData() << endl;
+    // print a value of 'a' after a function call
+    cout << "a : " << a.GetData() << endl;
 
-    cout << "*****  End *****" << endl;
+    cout << "***** END *****" << endl;
 
     return 0;
 }
