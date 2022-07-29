@@ -4,6 +4,7 @@ class CMyString
 public :
 	CMyString();
 	CMyString(const CMyString& rhs);
+	explicit CMyString(const char* pszParam);
 	~CMyString();
 	CMyString& operator=(const CMyString& rhs)
 	{
@@ -12,6 +13,7 @@ public :
 
 		return *this;
 	}
+	operator char*(void) const { return this->m_pszData; }
 private:
 	// the pointer that points dynamically allocated memory to store string
 	char* m_pszData;

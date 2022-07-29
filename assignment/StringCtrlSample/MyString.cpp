@@ -15,6 +15,14 @@ CMyString::CMyString(const CMyString& rhs)
 	this->m_nLength = rhs.m_nLength;
 }
 
+CMyString::CMyString(const char* pszParam)
+	: m_pszData(NULL)
+	, m_nLength(0)
+{
+
+	SetString(pszParam);
+}
+
 CMyString::~CMyString()
 {
 	CMyString::Release();
