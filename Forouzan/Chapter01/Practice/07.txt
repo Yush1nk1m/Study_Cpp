@@ -1,0 +1,3 @@
+# Fay - Tara - Benji, Willi
+Parent(Fay, Tara) -> YES
+GrandParent(Tara, Willi) -> NO

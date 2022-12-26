@@ -1,0 +1,2 @@
+If variable's name is 'double', it can't be that because it is name of reserved word.
+If variable's type is 'double', its name has not been declared.

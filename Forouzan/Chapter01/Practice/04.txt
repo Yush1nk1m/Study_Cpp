@@ -1,0 +1,1 @@
+The rest among a, b, c is the result.

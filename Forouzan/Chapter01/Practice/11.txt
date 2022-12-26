@@ -1,0 +1,3 @@
+input centimeter
+inch = 2.54 * centimeter
+output inch

@@ -1,0 +1,1 @@
+A method cout has used without 'using namespace std' statement or 'std::' statement.
