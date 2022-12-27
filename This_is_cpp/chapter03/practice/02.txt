@@ -1,2 +1,0 @@
-constructor(생성자)
-constructor takes the form like 'Class name(parameter) : initializer list { expression };'
