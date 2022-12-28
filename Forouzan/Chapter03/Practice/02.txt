@@ -1,0 +1,1 @@
+b : In the hexadecimal system, literal 'H' cannot be in the expression.

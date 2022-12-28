@@ -1,0 +1,4 @@
+1. bool->int, unknown
+2. char->int, unknown
+3. X, unknown
+4. float->double, unknown

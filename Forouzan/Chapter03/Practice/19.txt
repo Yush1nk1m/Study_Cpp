@@ -1,0 +1,6 @@
+x += 1;
+y -= 1;
+t = 5.14;
+temp = first;
+first = second;
+second = temp;

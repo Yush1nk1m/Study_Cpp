@@ -1,0 +1,1 @@
+a, b(only declared), c
