@@ -1,0 +1,10 @@
+switch (ch)
+{
+    case 'a':
+    case 'A': countA++; break;
+    case 'e':
+    case 'E': countE++; break;
+    case 'i':
+    case 'I': countI++; break;
+    default: cout << "Error--Not A, E, or I" << endl;
+}

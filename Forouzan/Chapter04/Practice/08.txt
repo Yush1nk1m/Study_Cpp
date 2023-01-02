@@ -1,0 +1,6 @@
+switch (x)
+{
+    case 2: x++; break;
+    case 3: x--; break;
+    default: cout << "End!";
+}
