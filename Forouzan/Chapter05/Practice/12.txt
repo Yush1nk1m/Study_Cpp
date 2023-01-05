@@ -1,0 +1,4 @@
+for (int x = 10; x < 20; x++)
+{
+    cout << x << endl;
+}

@@ -1,0 +1,6 @@
+int x = 20;
+while (x < 10)
+{
+    cout << x << endl;
+    x--;
+}

@@ -1,0 +1,6 @@
+int x = 10;
+while (true)
+{
+    cout << x << " ";
+    x++;
+}
