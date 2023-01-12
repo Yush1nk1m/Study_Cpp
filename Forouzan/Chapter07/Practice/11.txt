@@ -1,0 +1,8 @@
+...
+int main()
+{
+    Fun fun1(1);
+    Fun fun2(fun1);
+    ...
+    return 0;
+}

@@ -1,0 +1,3 @@
+Fun() : Default constructor
+Fun(int x) : Parameter constructor
+Fun(const Fun& fun) : Copy constructor

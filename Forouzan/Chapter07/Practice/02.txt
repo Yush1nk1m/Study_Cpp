@@ -1,0 +1,1 @@
+A constructor cannot have return type.

@@ -1,0 +1,2 @@
+Function definition part is described as "[return type] [class name]::[function name](parameters)".
+int Fun::getX() const is correct expression.

@@ -1,0 +1,9 @@
+Fun::Fun(int x)
+: x(x)
+{
+}
+
+Fun::Fun(const Fun& fun)
+: x(fun.x)
+{
+}

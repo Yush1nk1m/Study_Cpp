@@ -1,0 +1,4 @@
+Rectangle::Rectangle(int len, int wid)
+: length(len), width(wid)
+{
+}
