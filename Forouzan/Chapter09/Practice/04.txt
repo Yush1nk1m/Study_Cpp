@@ -1,0 +1,1 @@
+'int& y = 2000', constant cannot be assigned to the references.

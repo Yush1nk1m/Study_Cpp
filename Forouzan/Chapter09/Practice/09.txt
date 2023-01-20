@@ -1,0 +1,1 @@
+'int* y = &x', a pointer without const qualifier cannot point a constant variable.

@@ -1,0 +1,1 @@
+'z = y', if a reference is once defined, other variables cannot be assigned to the reference.
