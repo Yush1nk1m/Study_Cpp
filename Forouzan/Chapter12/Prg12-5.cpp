@@ -12,4 +12,5 @@ class Student : public Person
     public:
         Student(string name, double gpa);
         virtual void print() const;
-}
+};
+#endif

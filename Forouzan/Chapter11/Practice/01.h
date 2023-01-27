@@ -15,4 +15,4 @@ class Second : public First
     public:
         void set(int a, int b);
         void print() const;
-}
+};
