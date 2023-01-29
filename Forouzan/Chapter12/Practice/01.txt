@@ -1,0 +1,3 @@
+Vtable1(Base) -> [print, destructor]
+Vtable2(Derived1) -> [print, destructor]
+Vtable3(Derived2) -> [print, destructor]

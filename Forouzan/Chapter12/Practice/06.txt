@@ -1,0 +1,1 @@
+It is needed to define the print member function in the class A as a virtual function.

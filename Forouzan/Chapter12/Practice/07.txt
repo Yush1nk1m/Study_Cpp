@@ -1,0 +1,1 @@
+ABC. All the ABC's base classes(AA, AB, BB) extend the same base class(A, B).
