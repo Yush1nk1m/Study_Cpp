@@ -3,7 +3,7 @@
 ************************************************/
 #include "array.h"
 
-int mian()
+int main()
 {
     // instantiate Array class which has 3 elements
     Array arr(3);
