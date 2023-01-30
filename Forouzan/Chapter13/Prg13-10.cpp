@@ -50,6 +50,6 @@ class Fraction
         friend bool operator>=(const Fraction& left, const Fraction& right);
         // extraction operator and insertion operator
         friend istream& operator>>(istream& left, Fraction& right);
-        friend ostream& operator<<(ostream& left, Fraction& right);
+        friend ostream& operator<<(ostream& left, const Fraction& right);
 };
 #endif
