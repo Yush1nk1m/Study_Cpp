@@ -1,0 +1,1 @@
+Return data type is 'void', it is possible not to satisfy operator's purpose.

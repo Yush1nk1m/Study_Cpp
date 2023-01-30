@@ -1,0 +1,3 @@
+Let an instance of Fun class is called 'fun1', 'fun2', etc.
+A prototype 'Fun operator+=(const Fun& fun)' defines the expressions like 'fun1 = fun1 + fun2',
+but a prototype 'Fun operator+=(int x)' defines the expressions like 'fun1 = fun1 + x'.

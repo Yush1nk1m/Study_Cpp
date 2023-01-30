@@ -1,0 +1,1 @@
+Indexing operator tends to have one parameter that indicates an index.

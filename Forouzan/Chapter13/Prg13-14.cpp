@@ -173,3 +173,7 @@ const int Date::daysInMonths[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30,
 const string Date::daysOfWeek[] = {"Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat"};
 const string Date::monthsOfYear[] = {"", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 // static member function definition
+bool Date::isLeap(int year)
+{
+    return ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)));
+}

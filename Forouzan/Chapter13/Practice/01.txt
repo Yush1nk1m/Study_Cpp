@@ -1,0 +1,1 @@
+There is no 'const' qualifier, thus there can be an error that the origin object changes.
