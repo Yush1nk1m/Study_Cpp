@@ -1,0 +1,11 @@
+Sample& operator+=(int number)
+{
+    value = value + number;
+    return (*this);
+}
+
+Sample& operator+=(const Sample& sample)
+{
+    value = value + sample.value;
+    return (*this);
+}

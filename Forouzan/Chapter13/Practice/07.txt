@@ -1,0 +1,4 @@
+Fun& operator+=(const Fun& right);
+Fun& operator=(const Fun& right);
+const Fun operator++(int);
+type operator()(type data);
