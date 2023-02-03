@@ -1,0 +1,2 @@
+It is written that function fun() throws no exception('throw()').
+However, in the function double type exception can be thrown.
