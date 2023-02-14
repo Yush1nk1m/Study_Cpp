@@ -1,0 +1,2 @@
+4/7 + 3/5 + 2/3 + 0
+This function returns sigma(k = 2 ~ n)(k / (2 * k - 1)) for the given input n.

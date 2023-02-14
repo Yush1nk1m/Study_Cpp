@@ -1,0 +1,2 @@
+4/6 + 3/5 + 2/4 + 0
+This function returns sigma(k = 2 ~ n)(k / (k + 2)) for the given input n.

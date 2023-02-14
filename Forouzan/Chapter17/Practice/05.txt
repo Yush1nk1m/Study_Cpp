@@ -1,0 +1,3 @@
+fun(5, 12) : 1
+fun(12, 5) : 1
+This function checks if two parameters are equal or different.

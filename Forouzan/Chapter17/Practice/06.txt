@@ -1,0 +1,2 @@
+11
+This function returns the sum of every digit of the given input.
