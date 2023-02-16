@@ -1,0 +1,5 @@
+1. Move to the location to be deleted
+2. temp = delNode
+3. delNode->before->next = delNode->next
+4. delNode->next->before = delNode->before
+5. del delNode

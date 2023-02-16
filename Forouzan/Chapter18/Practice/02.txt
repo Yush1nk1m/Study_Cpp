@@ -1,0 +1,4 @@
+1. newNode->before = 0
+2. newNode->next = begin
+3. begin->before = newNode
+4. begin = newNode

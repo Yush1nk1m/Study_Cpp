@@ -59,7 +59,6 @@ void List<T>::erase(int pos)
         cout << "Cannot delete the node out of range." << endl;
         return;
     }
-    
     if (pos == 0)
     {
         Node<T>* del = begin;

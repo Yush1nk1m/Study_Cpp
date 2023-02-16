@@ -1,0 +1,5 @@
+1. Move to the location to be inserted.
+2. newNode->next = beforeNode->next
+3. beforeNode->next = newNode
+4. newNode->before = beforeNode
+5. newNode->next->before = newNode

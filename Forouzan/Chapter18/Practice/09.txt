@@ -1,0 +1,2 @@
+1. Pop two elements from the queue and push to the queue
+2. Pop middle element from the queue

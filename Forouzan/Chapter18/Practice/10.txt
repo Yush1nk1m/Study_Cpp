@@ -1,0 +1,2 @@
+Every element in the queue must be popped and pushed at least 1 time.
+Target element is not pushed to the queue again.

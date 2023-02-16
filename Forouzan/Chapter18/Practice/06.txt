@@ -1,0 +1,4 @@
+1. Move to the last node
+2. end = end->before
+3. del end->next
+4. end->next = 0

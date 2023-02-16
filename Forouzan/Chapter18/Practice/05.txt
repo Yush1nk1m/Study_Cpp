@@ -1,0 +1,3 @@
+1. begin = begin->next
+2. del begin->before
+3. begin->before = 0
